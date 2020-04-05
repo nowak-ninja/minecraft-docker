@@ -1,6 +1,7 @@
 # minecraft-docker
-### docker-compose up -d
-### docker attach {container}
+#### docker-compose up -d
+#### docker attach {container}
+#### ctrl+p ctrl+q
 
 Links:
 
