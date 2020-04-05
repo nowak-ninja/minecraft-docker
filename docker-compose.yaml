@@ -1,0 +1,26 @@
+version: '3.4'
+services:
+  bds:
+    image: itzg/minecraft-bedrock-server
+    environment:
+      EULA: "TRUE"
+      VERSION: LATEST
+      SERVER_NAME: "Flash Minecraft Server"
+      MAX_PLAYERS: 5
+      LEVEL_NAME: Kubusiolandia
+      GAMEMODE: survival
+      DIFFICULTY: normal
+      WHITE_LIST: "true"
+      PLAYER_IDLE_TIMEOUT: 30
+    ports:
+      - 19132:19132/udp
+    stdin_open: "true"
+    tty: "true"
+    volumes:
+      - bds:/data
+      - ./whitelist.json:/data/whitelist.json
+      - ./permissions.json:/data/permissions.json
+volumes:
+  bds: {}
+  whitelist.json: {}
+  permissions.json: {}
