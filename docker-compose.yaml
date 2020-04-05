@@ -14,8 +14,8 @@ services:
       PLAYER_IDLE_TIMEOUT: 30
     ports:
       - 19132:19132/udp
-    stdin_open: "true"
-    tty: "true"
+    stdin_open: true
+    tty: true
     volumes:
       - bds:/data
       - ./whitelist.json:/data/whitelist.json
