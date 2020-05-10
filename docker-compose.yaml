@@ -20,6 +20,7 @@ services:
       - bds:/data
       - ./whitelist.json:/data/whitelist.json
       - ./permissions.json:/data/permissions.json
+    restart: always
 volumes:
   bds: {}
   whitelist.json: {}
