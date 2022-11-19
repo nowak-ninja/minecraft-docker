@@ -5,12 +5,12 @@ services:
     environment:
       EULA: "TRUE"
       VERSION: LATEST
-      SERVER_NAME: "Flash Minecraft Server"
+      SERVER_NAME: "Nowak Ninja Minecraft Server"
       MAX_PLAYERS: 5
-      LEVEL_NAME: Kubusiolandia
+      LEVEL_NAME: "Deweloperka"
       GAMEMODE: survival
       DIFFICULTY: normal
-      WHITE_LIST: "true"
+      WHITE_LIST: "false"
       PLAYER_IDLE_TIMEOUT: 30
     ports:
       - 19132:19132/udp
